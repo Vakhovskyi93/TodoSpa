@@ -1,0 +1,32 @@
+
+
+<div class="inputWrap flexColToRow flexBetween flexAlignCenter">
+
+     <input type="text " name="searchText" [(ngModel)]='searchText'  (keyup)="search()" placeholder="Try to search smth...">
+     <div class="sortaction">
+          
+          <span class="inlineBlock sortLabel" >Sort by:</span>
+          <span class="material-icons icon" (click)=sortASC()>trending_up</span>
+          <span class="material-icons icon" (click)=sortDEC()>trending_down</span>
+          <span class="material-icons icon" (click)=sortUndone()> thumb_down </span>
+          <span class="material-icons icon" (click)=sortDone()>done_all</span>
+          
+     </div>
+</div>
+ 
+
+     <app-todo-item 
+     *ngFor="let item of todoList"
+     [item]="item"
+     (delete)='delete($event)'
+     (done)='done($event)'
+     ></app-todo-item>
+ 
+
+     <h3 class="message" *ngIf="!todoList.length && searchText.length == 0 ">Empty list</h3>
+     <h3 class="message" *ngIf="!todoList.length && searchText.length > 0 ">Nothing to show</h3>
+     <button class="addTodoBtn"
+     [routerLink]="[{ outlets: { 'popup': [ 'addtodo'] }}]" skipLocationChange
+      >+</button> 
+
+   

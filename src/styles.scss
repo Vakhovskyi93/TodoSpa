@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+$materialize-fonts-path: '~materialize-angular/fonts';
+ 
+@import '~materialize-angular/styles/materialize-angular.scss';
+
+
+html{
+     
+    background: rgba(50, 54, 65, .7) !important;
+}
+body{
+    // background: rgba(50, 54, 65, 0.5);
+    padding: 0 0 50px 0;
+    min-height: 100vh;
+}
+.flexColToRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flexRow{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.flexAlignCenter{
+    align-items: center;
+}
+.flexRow{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.flexJCEnd{
+    justify-content: flex-end;
+}
+.done{
+    position: relative;
+}
+.done::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 15px;
+    background-color: rgb(10, 247, 117);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.flexAlignCenter{
+    align-items: center;
+}
+.flexBetween{
+    justify-content: space-around;
+}
+.inputWrap{
+   
+    margin-bottom: 25px;
+   
+}

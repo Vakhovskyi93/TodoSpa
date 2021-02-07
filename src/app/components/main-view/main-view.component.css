@@ -1,0 +1,86 @@
+    
+input{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 10px 10px 0px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.sortSelect{
+    position: relative;
+}
+.sortSelect::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    bottom: 0;
+    left: 15px;
+}
+
+.flexAlignCenter{
+    align-items: center;
+}
+.flexBetween{
+    justify-content: space-around;
+}
+.inputWrap{
+   
+    margin-bottom: 25px;
+   
+}
+.sortLabel{
+    font-size: 18px;
+    color: darkgrey;
+}
+.inlineBlock{
+    display: inline-block;
+    padding: 5px;
+}
+.icon{
+    position: relative;
+    padding: 5px;
+    top: 5px;
+    cursor: pointer;
+
+}
+.message{
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+    background-color: #5707eb8a;
+    color: #FFFFFF;
+}
+.addTodoBtn{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #5707EB;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 10px rgba(247, 246, 246, 0.5);
+     
+}
+.addTodoBtn::after{
+    content: '+';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: 10px;
+    color: honeydew;
+    font-size: 50px;
+
+}

@@ -1,0 +1,31 @@
+
+<div class="addTodoFormWrap flexCol">
+    <div class="flexRow flexJCEnd"><span class="material-icons block" (click)=onclose()>
+        close
+        </span>
+    </div>
+
+
+    <materialize-input floatLabel="Title" class="input" name="title" [(ngModel)]="title"  ></materialize-input> 
+    <materialize-textarea floatLabel="Text" class="input" name="text" [(ngModel)]="text"></materialize-textarea>
+
+
+    <div class="markWrap flexRow flexBetween" (click)='selectMark($event)'>
+        <span class="mark">1</span>
+        <span class="mark">2</span>
+        <span class="mark">3</span>
+        <span class="mark">4</span>
+        <span class="mark">5</span>
+        <span class="mark">6</span>
+        <span class="mark">7</span>
+        <span class="mark">8</span>
+        <span class="mark">9</span>
+        <span class="mark">10</span>
+    </div>
+
+    <materialize-button  (click)="saveNewTodo()" [disabled]="!title"  >Add task</materialize-button>
+
+</div>
+
+
+ 

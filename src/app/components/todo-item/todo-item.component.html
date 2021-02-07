@@ -1,0 +1,12 @@
+<div [ngClass]='{done: item.status }'> 
+    <materialize-card  > 
+        
+        <h6>{{item.title}}<span class="priority">{{item.priority}}</span></h6>
+        <p class="todoText">{{item.body}}</p>
+        <div class="controlPanel flexRow flexJCEnd">
+            <span class="todoID"> Task id: {{item.id}}</span> 
+            <materialize-button (click)=doneItem(item.id)  [disabled]="item.status">Done</materialize-button>
+            <materialize-button   (click)=deleteItem(item.id) >Delete</materialize-button>
+        </div> 
+    </materialize-card>
+</div>

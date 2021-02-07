@@ -1,0 +1,52 @@
+
+.card{
+    position: relative;
+    padding: 10px;
+    
+}
+
+
+.deleteBtn{
+    background-color: red;
+}
+.controlPanel{
+    position: relative;
+}
+materialize-button {
+    margin-left: 15px;
+    position: relative;
+}
+ 
+h6{
+    font-size: 22px;
+    margin: 10px 0 25px 20px;
+    position: relative;
+}
+.todoText{
+    font-size: 18px;
+    margin: 10px 0 25px 20px;
+}
+.priority{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 18px;
+    color: darkgray;
+}
+.todoID{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color: darkgray;
+    display: none;
+}
+
+@media(min-width:450px){
+    .todoID{
+        display: block;
+    }
+    .priority{
+        right: 25px;
+        transition: 1s;
+    }
+}
